@@ -3,7 +3,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        backgroundColor: '#000000'
+        backgroundColor: '#f0f000'
     },
     headerRow: {
         flexDirection: 'row',
@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#f0f0f0',
         padding: 10,
-        borderRadius: 5,
+        borderRadius: 15,
     },
     headerText: {
         textAlign: 'center',
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     profileIcon: {
         width:30,
         height:30,
-        backgroundColor: 'purple',
+        backgroundColor: 'white',
         borderRadius: 15,
         marginRight: 10,
     },
@@ -43,4 +43,26 @@ export const styles = StyleSheet.create({
         padding: 20,
         borderRadius: 5,
     },
+    BlueButton: {
+        position: 'absolute', 
+        bottom: 20,
+        right: 20,
+        backgroundColor: '#23c2dfff',
+        padding: 15,
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.25,
+        shadowRadius: 3.5,
+    },
+    ButtonText: {
+        color: 'white',
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
 });
+{/*Homework: play around with: width, height, backgroundColor, borderRadius, marginRight, marginBottom, YOU MUST REVERT BACK AFTERWARDS!!*/}

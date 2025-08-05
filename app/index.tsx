@@ -1,5 +1,5 @@
-import { Text, View } from "react-native";
-import { styles } from "./indexstyle";
+import { Text, TouchableOpacity, View } from "react-native";
+import { styles } from "../styles/indexstyle";
 
 export default function Index() {
   return (
@@ -14,13 +14,23 @@ export default function Index() {
       </View>
       {/*This is for content block 1*/}
       <View style = {styles.ContentBlock1}>
-        <Text style = {styles.ContentTextCenter}> Content block 1</Text>
+        <Text style = {styles.ContentTextCenter}> Container Block 1</Text>
       </View>
       {/*This is for content block 2*/}
       <View style = {styles.ContentBlock2}>
-        <Text style = {styles.ContentTextCenter}> Content block 2</Text>
+        <Text style = {styles.ContentTextCenter}> Container Block 2</Text>
       </View>
+      {/*This is for a button that adds swim meet times*/}
+      <TouchableOpacity
+      onPress = {()=>setModalVisible(true)}
+      style = {styles.BlueButton}>
+        <Text style = {styles.ButtonText}>+</Text>
+      </TouchableOpacity>
 
+      <SwimMeetModal
+        visible={modalVisible}
+        onClose={() => setModalVisible(false)}
+      />
     </View>
 
   );
