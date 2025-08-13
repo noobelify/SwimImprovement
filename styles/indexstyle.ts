@@ -65,4 +65,4 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
     },
 });
-{/*Homework: play around with: width, height, backgroundColor, borderRadius, marginRight, marginBottom, YOU MUST REVERT BACK AFTERWARDS!!*/}
+{/*Homework:*/}
